@@ -1,0 +1,17 @@
+.cabecalho {
+  background-color: rgb(153, 114, 153);
+}
+
+.cabecalho__lista {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cabecalho__lista li {
+display:block;
+list-style: none;
+margin-left: 15px;
+color:white;
+
+}
