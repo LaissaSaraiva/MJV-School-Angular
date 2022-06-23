@@ -1,0 +1,22 @@
+.cabecalho {
+  background-color: rgb(128, 0, 128, 0.5);
+}
+
+.cabecalho__lista {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cabecalho__item {
+  list-style: none;
+  margin: 20px;
+}
+
+.cabecalho__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.cabecalho__item a:hover {
+  font-size: 110%;
+} 
