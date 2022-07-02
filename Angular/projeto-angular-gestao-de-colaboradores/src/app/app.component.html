@@ -25,15 +25,25 @@ https://github.com/NathanCarlos/turma-devschool-angular-pt-br/blob/master/modulo
 
 <app-header></app-header>
 
-<h1>{{ titulo }}</h1>
+<!-- <h1>{{ titulo }}</h1> interpolação -->
 
 <app-listagem></app-listagem>
-
-<div>
-  <p>Colaborador: {{ colaborador.nome }}</p>
-  <p>Identificação: {{ colaborador.id }}</p>
-  <p>Salário: {{ colaborador.salario }}</p>
-  <p>Cargo: {{ colaborador.cargo }}</p>
-</div>
+*ngIf="colaborador.salario < 5000"
+<section *ngFor="let colaborador of colaboradores">
+  <div *ngIf="colaborador.salario > 5000">
+    <p>Colaborador: {{ colaborador.nome }}</p>
+    <p>Identificação: {{ colaborador.id }}</p>
+    <p>Salário: {{ colaborador.salario }}</p>
+    <p>Cargo: {{ colaborador.cargo }}</p>
+    <p
+      [ngClass]="{
+        temporario: colaborador.temporario,
+        'nao-temporario': !colaborador.temporario
+      }"
+    >
+      {{ colaborador.temporario ? "Temporário" : "Efetivado" }}
+    </p>
+  </div>
+</section>
 
 <app-footer></app-footer>

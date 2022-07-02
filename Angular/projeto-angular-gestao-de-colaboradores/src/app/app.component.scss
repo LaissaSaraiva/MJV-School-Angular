@@ -5,10 +5,18 @@ app-listagem {
   text-align: center;
 }
 div {
-  border: 1.5px solid purple;
+   border: 1.5px solid purple;
   border-radius: 20px;
   width: 300px;
   padding: 25px;
   background-color: antiquewhite;
-  margin: 130px auto;
+  margin: 20px auto;
+}
+
+.temporario{
+  color:rgb(240, 14, 14);
+}
+
+.nao-temporario{
+  color: green;
 }
